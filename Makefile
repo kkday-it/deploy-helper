@@ -12,7 +12,7 @@ bin/deploy-helper:
 	go build -ldflags "${GO_LDFLAGS}" -o "$@" ./
 
 test:
-	go test ./...
+	go test ./... -cover
 .PHONY: test
 
 clean:
